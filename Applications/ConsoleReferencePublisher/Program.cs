@@ -224,8 +224,8 @@ namespace Quickstarts.ConsoleReferencePublisher
                 Name = "WriterGroup 1",
                 Enabled = true,
                 WriterGroupId = 1,
-                PublishingInterval = 5000,
-                KeepAliveTime = 5000,
+                PublishingInterval = 5000, // milliseconds
+                KeepAliveTime = 5, // seconds
                 MaxNetworkMessageSize = 1500,
                 HeaderLayoutUri = "UADP-Cyclic-Fixed"
             };
@@ -347,8 +347,8 @@ namespace Quickstarts.ConsoleReferencePublisher
                 Name = "WriterGroup 1",
                 Enabled = true,
                 WriterGroupId = 1,
-                PublishingInterval = 5000,
-                KeepAliveTime = 5000,
+                PublishingInterval = 5000, // milliseconds
+                KeepAliveTime = 5, // seconds
                 MaxNetworkMessageSize = 1500
             };
 
@@ -490,8 +490,8 @@ namespace Quickstarts.ConsoleReferencePublisher
                 Name = "WriterGroup 1",
                 Enabled = true,
                 WriterGroupId = 1,
-                PublishingInterval = 5000,
-                KeepAliveTime = 5000,
+                PublishingInterval = 5000, // milliseconds
+                KeepAliveTime = 5, // seconds
                 MaxNetworkMessageSize = 1500,
                 HeaderLayoutUri = "UADP-Cyclic-Fixed"
             };

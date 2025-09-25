@@ -28,7 +28,6 @@
  * ======================================================================*/
 
 using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Security;
 using System.Security.Authentication;
@@ -139,24 +138,6 @@ namespace Opc.Ua.PubSub.Transport
         internal string ClientCertificatePassword { get; set; }
 
         internal KeyValuePairCollection KeyValuePairs { get; set; }
-
-        internal List<X509Certificate> X509Certificates
-        {
-            get
-            {
-                var values = new List<X509Certificate>();
-                if (m_caCertificate != null)
-                {
-                    values.Add(m_caCertificate);
-                }
-                if (m_clientCertificate != null)
-                {
-                    values.Add(m_clientCertificate);
-                }
-
-                return values;
-            }
-        }
     }
 
     /// <summary>
